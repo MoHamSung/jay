@@ -9,11 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            TitleView()
-            TitleView()
+        ScrollView {
+            VStack(spacing: 0) {
+                TitleView()
+                Divider()
+                    .padding(.horizontal, 20)
+                    .foregroundColor(Color("ColorDividerGray"))
+                PromotionTabView()
+                Divider()
+                    .foregroundColor(Color("ColorDividerGray"))
+                
+            }
         }
-        .tabViewStyle(PageTabViewStyle())
         
     }
 }
