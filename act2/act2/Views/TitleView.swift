@@ -25,7 +25,7 @@ struct TitleView: View {
                 .padding(.bottom, 16)
         }
         .frame(maxWidth: .infinity)
-        .frame(height: 100)
+//        .frame(height: 100)
         .border(Color.red)
         .padding(.horizontal, 20)
     }
