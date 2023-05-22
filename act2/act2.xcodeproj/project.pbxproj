@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		694CEB0C2A1B333200437129 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEB0B2A1B333200437129 /* NewItemView.swift */; };
 		69C129452A1A510400E764F4 /* act2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C129442A1A510400E764F4 /* act2App.swift */; };
 		69C129472A1A510400E764F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C129462A1A510400E764F4 /* ContentView.swift */; };
 		69C129492A1A510500E764F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C129482A1A510500E764F4 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		694CEB0B2A1B333200437129 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		69C129412A1A510400E764F4 /* act2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = act2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C129442A1A510400E764F4 /* act2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = act2App.swift; sourceTree = "<group>"; };
 		69C129462A1A510400E764F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				69C129462A1A510400E764F4 /* ContentView.swift */,
 				69C129702A1A562700E764F4 /* TitleView.swift */,
 				69C129742A1A5EC400E764F4 /* PromotionTabView.swift */,
+				694CEB0B2A1B333200437129 /* NewItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694CEB0C2A1B333200437129 /* NewItemView.swift in Sources */,
 				69C129752A1A5EC400E764F4 /* PromotionTabView.swift in Sources */,
 				69C129732A1A5E0600E764F4 /* PromotionItem.swift in Sources */,
 				69C129472A1A510400E764F4 /* ContentView.swift in Sources */,
