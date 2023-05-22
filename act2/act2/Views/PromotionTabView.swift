@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PromotionTabView: View {
+    @Environment(\.colorScheme) var colorScheme
+
     let items = [
         PromotionItem(id: 0, iconString: "shippingbox", iconSize: 36, title: "무료 배송", body: "집으로 배송 받으세요. 아니면 Apple Store에서 재고\n제품을 픽업하세요.", linkString: "더 알아보기"),
         PromotionItem(id: 1, iconString: "macbook.and.iphone", iconSize: 31, title: "Apple Trade In", body: "iPhone 8 이후 모델을 보상 판매하면 iPhone 14 또는 iPhone 14 Pro 구입 시 사용할 수 있는 ₩40,000 ~ ₩780,000 상당의 크레딧이.*", linkString: "더 알아보기"),
@@ -21,8 +23,24 @@ struct PromotionTabView: View {
             }
         }
         .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle())
         .frame(height: 138)
+        .onAppear{
+            setupAppearance()
+        }
+
     }
+    
+    func setupAppearance() {
+        if colorScheme == .light {
+            UIPageControl.appearance().currentPageIndicatorTintColor = .black
+            UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
+        }
+        else {
+            UIPageControl.appearance().currentPageIndicatorTintColor = .white
+            UIPageControl.appearance().pageIndicatorTintColor = UIColor.white.withAlphaComponent(0.2)
+        }
+     }
 }
 
 struct PromotionItemView: View{
