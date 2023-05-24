@@ -24,7 +24,7 @@ struct ContentView: View {
                 
                 NewItemView(itemState: "NEW", itemTitle: "iPad", describe: "다양한 일상 작업에 맞는 완전히 새롭고, 컬러풀한 iPad. 새로운 iPad를 소개합니다.", imageString: "image_iPad", price: "1,250,000")
                 
-                
+                ProductSwipeView()
             }
         }
         
