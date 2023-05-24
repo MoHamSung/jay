@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ProductView: View {
+    let product: Product
     
     var body: some View {
         VStack{
-            Image("image_Product01")
+            Image(product.imageString)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity)
@@ -20,14 +21,14 @@ struct ProductView: View {
                 .overlay {
                     HStack(spacing: 0) {
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("다채롭게 만개한 \n어버이날 선물")
+                            Text(product.title)
                                 .font(.system(size: 26, weight: .bold))
-                                .foregroundColor(Color("ColorFontBlack"))
+                                .foregroundColor(Color(product.titleColor))
                                 .padding(.top, 24)
                             
-                            Text("쉽게 선물 쇼핑하기.")
+                            Text(product.subTitle)
                                 .font(.system(size: 14))
-                                .foregroundColor(Color("ColorFontBlack"))
+                                .foregroundColor(Color("ColorFontGray"))
                             Spacer()
                         }
                         .padding(.horizontal, 20)
@@ -43,6 +44,8 @@ struct ProductView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView()
+        ProductView(product: Product(id: 0, imageString: "image_Product01", title: "다채롭게 만개한 \n어버이날 선물", subTitle: "쉽게 선물 쇼핑하기.", titleColor: "ColorFontGray"))
+        
+        
     }
 }

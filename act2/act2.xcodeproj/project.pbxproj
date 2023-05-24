@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6918BD772A1E5689003B0CDF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918BD762A1E5689003B0CDF /* Product.swift */; };
 		694CEB0C2A1B333200437129 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEB0B2A1B333200437129 /* NewItemView.swift */; };
 		694CEB0E2A1B493F00437129 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEB0D2A1B493F00437129 /* ProductView.swift */; };
 		694CEB102A1B50A300437129 /* ProductSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CEB0F2A1B50A300437129 /* ProductSwipeView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6918BD762A1E5689003B0CDF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		694CEB0B2A1B333200437129 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		694CEB0D2A1B493F00437129 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		694CEB0F2A1B50A300437129 /* ProductSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSwipeView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				69C129722A1A5E0600E764F4 /* PromotionItem.swift */,
+				6918BD762A1E5689003B0CDF /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				694CEB0C2A1B333200437129 /* NewItemView.swift in Sources */,
 				69C129752A1A5EC400E764F4 /* PromotionTabView.swift in Sources */,
+				6918BD772A1E5689003B0CDF /* Product.swift in Sources */,
 				69C129732A1A5E0600E764F4 /* PromotionItem.swift in Sources */,
 				69C129472A1A510400E764F4 /* ContentView.swift in Sources */,
 				694CEB0E2A1B493F00437129 /* ProductView.swift in Sources */,
