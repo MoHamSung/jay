@@ -45,10 +45,10 @@ struct ProductSwipeView: View {
             }
             .frame(height: 507)
             
-            //        .frame(minWidth: .infinity)
-            //        .onAppear {
-            //            UIScrollView.appearance().isPagingEnabled = true
-            //        }
+//                    .frame(minWidth: .infinity)
+//                    .onAppear {
+//                        UIScrollView.appearance().isPagingEnabled = true
+//                    }
             
             Spacer()
                 .frame(height: 100)
