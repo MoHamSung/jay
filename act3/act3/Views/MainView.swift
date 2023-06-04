@@ -18,6 +18,7 @@ struct MainView: View {
 
 struct NavigationBar: View{
     @State var isPlusPressed = false
+    @State var alarmLists = [Alarm]()
     
     var body: some View {
         List {
@@ -59,8 +60,16 @@ struct NavigationBar: View{
                             .foregroundColor(Color("ColorFontWhite"))
                     }
             ){
-                Text("asdf")
-                Text("asdf")
+                ForEach(alarmLists) { alarm in
+                    AlarmComponentView(isPlusPressed: $isPlusPressed, alarm: alarm)
+                    
+//                    Button {
+//
+//                    } label: {
+//                        AlarmComponentView(alarm: alarm)
+//                    }
+                        
+                }
             }
         }
         .listStyle(.plain)
@@ -77,7 +86,7 @@ struct NavigationBar: View{
         .navigationTitle("알람")
         .sheet(isPresented: $isPlusPressed) {
             NavigationView {
-                AlarmSettingView(isPlusPressed: $isPlusPressed)
+                AlarmSettingView(isPlusPressed: $isPlusPressed, alarmLists: $alarmLists)
             }
         }
     }

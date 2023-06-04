@@ -9,11 +9,13 @@ import SwiftUI
 
 struct AlarmSettingView: View {
     @Binding var isPlusPressed: Bool
+    @Binding var alarmLists : [Alarm]
+    @State var date = Date()
     
     var body: some View {
         VStack{
 // TODO: - 텍스트 칸 잡아먹는 거 해결해야 함. -> 해결?
-            DatePicker("김말티 바보", selection: .constant(.now), displayedComponents: .hourAndMinute)
+            DatePicker("김말티 바보", selection: $date, displayedComponents: .hourAndMinute)
                 .datePickerStyle(.wheel)
                 .labelsHidden()
             
@@ -59,6 +61,8 @@ struct AlarmSettingView: View {
             }
             ToolbarItem(placement: .confirmationAction){
                 Button {
+                    alarmLists.append(Alarm(id: alarmLists.count, date: date, kind: "알람"))
+                    
                     isPlusPressed.toggle()
                 }label: {
                     Text("저장")
@@ -84,12 +88,12 @@ struct AlarmOptionView<Content>: View where Content: View {
         }
     }
 }
-
-struct AlarmSettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView{
-            AlarmSettingView(isPlusPressed: .constant(true))
-                .preferredColorScheme(.dark)
-        }
-    }
-}
+//
+//struct AlarmSettingView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationView{
+//            AlarmSettingView(isPlusPressed: .constant(true))
+//                .preferredColorScheme(.dark)
+//        }
+//    }
+//}

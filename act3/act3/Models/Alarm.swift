@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Alarm: Identifiable{
+class Alarm: Identifiable, ObservableObject {
     let id: Int
+    let kind: String
     var date: Date
     var partOfDay: String
     var time: String
-    let kind: String
-    var isActive: Bool
+    @Published var isActive: Bool
     
     init(id: Int, date: Date, kind: String) {
         let dateFormatter = DateFormatter()
@@ -25,13 +25,13 @@ struct Alarm: Identifiable{
         dateFormatter.dateFormat = "a"
         partOfDay = dateFormatter.string(from: date)
         
-        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.dateFormat = "h:mm"
         time = dateFormatter.string(from: date)
         
         isActive = true
     }
     
-    mutating func updateDate(date: Date){
+    func updateDate(date: Date){
         let dateFormatter = DateFormatter()
         self.date = date
         

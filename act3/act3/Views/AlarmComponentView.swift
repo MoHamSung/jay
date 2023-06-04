@@ -8,43 +8,42 @@
 import SwiftUI
 
 struct AlarmComponentView: View {
-//    @State var isToggleOn = false
-    let alarm: Alarm
+    @Binding var isPlusPressed: Bool
+    @ObservedObject var alarm: Alarm
     
     var body: some View {
-        HStack{
-            VStack(alignment: .leading, spacing: 0) {
-                HStack(alignment: .bottom , spacing: 0){
-                    
-                    Text(alarm.partOfDay)
-                        .font(.system(size: 35))
-                        .foregroundColor(Color("ColorFontWhite"))
-                        .baselineOffset(7)
-                    //                    .border(.red)
-                    Text(alarm.time)
-                        .font(.system(size: 59))
-                        .frame(maxWidth: .infinity)
-                        .foregroundColor(Color("ColorFontWhite"))
-                    //                    .border(.red)
+        Button{
+            print("nellop")
+            isPlusPressed.toggle()
+            
+        } label: {
+            HStack{
+                VStack(alignment: .leading, spacing: 0) {
+                    HStack(alignment: .bottom , spacing: 0){
+                        
+                        Text(alarm.partOfDay)
+                            .font(.system(size: 35))
+                            .baselineOffset(7)
+                        Text(alarm.time)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(.system(size: 59))
+                    }
+                    Text(alarm.kind)
+                        .font(.system(size: 12))
                 }
-                Text(alarm.kind)
-                    .font(.system(size: 12))
-                    .foregroundColor(Color("ColorFontWhite"))
-                //                .border(.red)
-            }
-            //        .border(.blue)
-            Spacer()
-            Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
+                .foregroundColor(Color("\(alarm.isActive ? "ColorFontWhite" : "ColorFontGray")"))
                 
+                Toggle(isOn: $alarm.isActive) {
+                    
+                }.labelsHidden()
             }
         }
-        
     }
 }
 
 struct AlarmComponentView_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmComponentView(alarm: Alarm(id:0, date: Date(), kind: "알람"))
+        AlarmComponentView(isPlusPressed: .constant(true), alarm: Alarm(id:0, date: Date(), kind: "알람"))
             .preferredColorScheme(.dark)
     }
 }
