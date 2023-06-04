@@ -12,7 +12,7 @@ struct AlarmSettingView: View {
     
     var body: some View {
         VStack{
-            // TODO: - 텍스트 칸 잡아먹는 거 해결해야 함. -> 해결?
+// TODO: - 텍스트 칸 잡아먹는 거 해결해야 함. -> 해결?
             DatePicker("김말티 바보", selection: .constant(.now), displayedComponents: .hourAndMinute)
                 .datePickerStyle(.wheel)
                 .labelsHidden()
@@ -70,6 +70,7 @@ struct AlarmSettingView: View {
     }
 }
 
+// MARK: - 뷰빌더 사용한 AlarmOptionView
 struct AlarmOptionView<Content>: View where Content: View {
     let title: String
     @ViewBuilder let content: Content

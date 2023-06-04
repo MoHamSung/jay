@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		695A258E2A2C4DD300C4B819 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695A258D2A2C4DD300C4B819 /* Alarm.swift */; };
 		695A25912A2C4E3200C4B819 /* AlarmSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695A25902A2C4E3200C4B819 /* AlarmSettingView.swift */; };
+		695A25932A2C6C3800C4B819 /* AlarmComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695A25922A2C6C3800C4B819 /* AlarmComponentView.swift */; };
 		69E5EBF72A27877A00BF3145 /* act3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E5EBF62A27877A00BF3145 /* act3App.swift */; };
 		69E5EBF92A27877A00BF3145 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E5EBF82A27877A00BF3145 /* ContentView.swift */; };
 		69E5EBFB2A27877B00BF3145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E5EBFA2A27877B00BF3145 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		695A258D2A2C4DD300C4B819 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		695A25902A2C4E3200C4B819 /* AlarmSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingView.swift; sourceTree = "<group>"; };
+		695A25922A2C6C3800C4B819 /* AlarmComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmComponentView.swift; sourceTree = "<group>"; };
 		69E5EBF32A27877A00BF3145 /* act3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = act3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E5EBF62A27877A00BF3145 /* act3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = act3App.swift; sourceTree = "<group>"; };
 		69E5EBF82A27877A00BF3145 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				69E5EC202A2789EE00BF3145 /* MainView.swift */,
 				69E5EBF82A27877A00BF3145 /* ContentView.swift */,
 				695A25902A2C4E3200C4B819 /* AlarmSettingView.swift */,
+				695A25922A2C6C3800C4B819 /* AlarmComponentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				69E5EC212A2789EE00BF3145 /* MainView.swift in Sources */,
 				69E5EBF72A27877A00BF3145 /* act3App.swift in Sources */,
 				695A258E2A2C4DD300C4B819 /* Alarm.swift in Sources */,
+				695A25932A2C6C3800C4B819 /* AlarmComponentView.swift in Sources */,
 				695A25912A2C4E3200C4B819 /* AlarmSettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
