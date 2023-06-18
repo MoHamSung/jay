@@ -63,12 +63,6 @@ struct NavigationBar: View{
                 ForEach(alarmLists) { alarm in
                     AlarmComponentView(isPlusPressed: $isPlusPressed, alarm: alarm)
                     
-//                    Button {
-//
-//                    } label: {
-//                        AlarmComponentView(alarm: alarm)
-//                    }
-                        
                 }
             }
         }
