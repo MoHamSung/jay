@@ -64,8 +64,12 @@ struct NavigationBar: View{
                     AlarmComponentView(isPlusPressed: $isPlusPressed, alarm: alarm)
                     
                 }
+                .onDelete { indexSet in
+                    alarmLists.remove(atOffsets: indexSet)
+                }
             }
         }
+        
         .listStyle(.plain)
         .toolbar {
             Button{
@@ -84,6 +88,7 @@ struct NavigationBar: View{
             }
         }
     }
+    
     
 }
 

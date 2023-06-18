@@ -43,7 +43,7 @@ struct AlarmComponentView: View {
 
 struct AlarmComponentView_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmComponentView(isPlusPressed: .constant(true), alarm: Alarm(id:0, date: Date(), kind: "알람"))
+        AlarmComponentView(isPlusPressed: .constant(true), alarm: Alarm( date: Date(), kind: "알람"))
             .preferredColorScheme(.dark)
     }
 }

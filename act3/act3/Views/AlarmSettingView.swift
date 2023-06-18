@@ -61,7 +61,7 @@ struct AlarmSettingView: View {
             }
             ToolbarItem(placement: .confirmationAction){
                 Button {
-                    alarmLists.append(Alarm(id: alarmLists.count, date: date, kind: "알람"))
+                    alarmLists.append(Alarm(date: date, kind: "알람"))
                     
                     isPlusPressed.toggle()
                 }label: {

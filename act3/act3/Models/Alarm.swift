@@ -8,17 +8,17 @@
 import Foundation
 
 class Alarm: Identifiable, ObservableObject {
-    let id: Int
+    let id = UUID()
     let kind: String
     var date: Date
     var partOfDay: String
     var time: String
     @Published var isActive: Bool
     
-    init(id: Int, date: Date, kind: String) {
+    init(date: Date, kind: String) {
         let dateFormatter = DateFormatter()
         
-        self.id = id
+//        self.id = id
         self.date = date
         self.kind = kind
         
