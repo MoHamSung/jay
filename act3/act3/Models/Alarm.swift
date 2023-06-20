@@ -18,7 +18,6 @@ class Alarm: Identifiable, ObservableObject {
     init(date: Date, kind: String) {
         let dateFormatter = DateFormatter()
         
-//        self.id = id
         self.date = date
         self.kind = kind
         
@@ -32,17 +31,21 @@ class Alarm: Identifiable, ObservableObject {
     }
     
     func updateDate(date: Date){
+        if (self.date != date){
+            isActive = true
+        }
+        
         let dateFormatter = DateFormatter()
         self.date = date
         
         dateFormatter.dateFormat = "a"
         partOfDay = dateFormatter.string(from: date)
         
-        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.dateFormat = "h:mm"
         time = dateFormatter.string(from: date)
         
-        isActive = true
     }
+    
     
 }
 
