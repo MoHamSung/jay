@@ -9,9 +9,8 @@ import SwiftUI
 
 struct AlarmSettingView: View {
     @Binding var isPlusPressed: Bool
-    @Binding var isUpdating: Bool
     @Binding var alarmLists : [Alarm]
-    var alarmTemp: Alarm
+    @Binding var alarmTemp: Alarm?
     @State var date = Date()
     
     var body: some View {
@@ -54,7 +53,7 @@ struct AlarmSettingView: View {
         .toolbar {
             ToolbarItem(placement: .cancellationAction){
                 Button {
-                    isUpdating = false
+                    alarmTemp = nil
                     isPlusPressed.toggle()
                 }label: {
                     Text("취소")
@@ -64,13 +63,13 @@ struct AlarmSettingView: View {
             }
             ToolbarItem(placement: .confirmationAction){
                 Button {
-                    if isUpdating {
-                        alarmTemp.updateDate(date: date)
+                    if let alarm = alarmTemp {
+                        alarm.updateDate(date: date)
                     }
                     else {
                         alarmLists.append(Alarm(date: date, kind: "알람"))
                     }
-                    isUpdating = false
+                    alarmTemp = nil
                     isPlusPressed.toggle()
                 }label: {
                     Text("저장")
@@ -81,8 +80,8 @@ struct AlarmSettingView: View {
         }
         .onAppear{
             ///  알람 추가와 수정시 date 초기화
-            if isUpdating {
-                date = alarmTemp.date
+            if let alarm = alarmTemp {
+                date = alarm.date
             }
             else {
                 date = Date()

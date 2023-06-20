@@ -18,9 +18,8 @@ struct MainView: View {
 
 struct NavigationBar: View{
     @State var isPlusPressed = false
-    @State var isUpdating = false
     @State var alarmLists = [Alarm]()
-    @State var alarmTemp = Alarm(date: Date(), kind: "") //= nil
+    @State var alarmTemp: Alarm? = nil 
     
     var body: some View {
         List {
@@ -65,7 +64,6 @@ struct NavigationBar: View{
                 ForEach(alarmLists) { alarm in
                     Button {
                         alarmTemp = alarm
-                        isUpdating = true
                         isPlusPressed.toggle()
                     } label: {
                         AlarmComponentView(alarm: alarm)
@@ -92,7 +90,7 @@ struct NavigationBar: View{
         .navigationTitle("알람")
         .sheet(isPresented: $isPlusPressed) {
             NavigationView {
-                AlarmSettingView(isPlusPressed: $isPlusPressed, isUpdating: $isUpdating, alarmLists: $alarmLists, alarmTemp: alarmTemp)
+                AlarmSettingView(isPlusPressed: $isPlusPressed, alarmLists: $alarmLists, alarmTemp: $alarmTemp)
             }
         }
     }
