@@ -17,11 +17,12 @@ struct MainView: View {
                 ContentAreaView()
                     .background(Color("ColorBgBlack"))
                     .padding(.horizontal, 20)
-            }.background(Color("ColorBgBlack"))
+            }
+            .background(Color("ColorBgBlack"))
+            MoreInformationView()
             PurchaseView()
             
         }
-        .headerProminence(.standard)
         .ignoresSafeArea()
     }
 }

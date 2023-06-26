@@ -10,26 +10,33 @@ import SwiftUI
 struct PurchaseView: View {
     var body: some View {
         VStack{
-            Image("ImgProduct01")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxWidth: .infinity)
-                .ignoresSafeArea()
-            Button {
-                
-            } label:
-            {
-                Image("shareBtn")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity)
-                    .ignoresSafeArea()
-            }
-            Image("infoBtn")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxWidth: .infinity)
-                .ignoresSafeArea()
+            CustomImageView(imgString: "ImgProduct01") {
+                VStack{
+                    Text("iPhone 14 Pro")
+                        .foregroundColor(Color("ColorFontBlack"))
+                        .font(.system(size: 26, weight: .bold))
+                        .padding(.top, 60)
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("구입하기")
+                            .foregroundColor(Color("ColorFontWhite"))
+                            .font(.system(size: 14, weight: .semibold))
+                            .padding(EdgeInsets(top: 5, leading: 14, bottom: 3, trailing: 14))
+                            .background(Color("ColorBtnBlue"))
+                            .cornerRadius(20)
+                    }
+                    
+                    Text("₩ 1,550,000부터")
+                        .foregroundColor(Color("ColorBgBlack"))
+                        .font(.system(size: 10))
+                        .padding(.top, 14)
+                        .padding(.bottom, 51)
+                    
+                }
+            }            
         }
     }
 }
