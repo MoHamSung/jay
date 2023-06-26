@@ -9,7 +9,28 @@ import SwiftUI
 
 struct PurchaseView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Image("ImgProduct01")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            Button {
+                
+            } label:
+            {
+                Image("shareBtn")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity)
+                    .ignoresSafeArea()
+            }
+            Image("infoBtn")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+        }
     }
 }
 

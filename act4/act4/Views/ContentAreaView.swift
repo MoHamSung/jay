@@ -9,7 +9,40 @@ import SwiftUI
 
 struct ContentAreaView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Image("ImgContentL01")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            Image("ImgContentL02")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            Image("ImgContentSm01")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            Image("ImgContentSm02")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            Image("ImgContentL03")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            Image("ImgContentL04")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            
+            
+        }
     }
 }
 

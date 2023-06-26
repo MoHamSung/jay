@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
         ScrollView {
-            ProductPreview()
-            
-            ContentAreaView()
-            
-            PurchaseView()
+            VStack{
+                ProductPreview()
+                
+                ContentAreaView()
+                
+                PurchaseView()
+                
+            }
         }
+        .ignoresSafeArea()
     }
 }
 
