@@ -10,20 +10,37 @@ import SwiftUI
 struct MainView: View {
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20){
-                ProductPreview()
-                
-                ContentAreaView()
+        ZStack{
+            ScrollView {
+                VStack(spacing: 20){
+                    VStack(spacing: 20){
+                        ProductPreview()
+                        
+                        ContentAreaView()
+                            .padding(.horizontal, 20)
+                    }
                     .background(Color("ColorBgBlack"))
-                    .padding(.horizontal, 20)
+                    
+                    VStack(spacing: 20) {
+                        MoreInformationView()
+                        PurchaseView()
+                        ShareView()
+                    }
+                    
+                }
+                .background(Color("ColorBgGray"))
+                
             }
-            .background(Color("ColorBgBlack"))
-            MoreInformationView()
-            PurchaseView()
+            .ignoresSafeArea()
             
+            VStack{
+                Spacer()
+                NavigationButton()
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 70)
+            }
+            .ignoresSafeArea()
         }
-        .ignoresSafeArea()
     }
 }
 
