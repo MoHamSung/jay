@@ -15,7 +15,7 @@ struct NavigationButton: View {
                 .foregroundColor(Color("ColorFontBlack"))
             Spacer()
             Button {
-                
+                print("김말티 구매~")
             } label: {
                 Text("구입하기")
                     .font(.system(size: 13))
@@ -25,7 +25,7 @@ struct NavigationButton: View {
             .padding(.vertical, 20)
         }
         .padding(.horizontal, 20)
-        .background(Color("ColorBgWhite"))
+        .background(.ultraThinMaterial)
         .cornerRadius(16)
     }
 }

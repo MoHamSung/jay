@@ -24,7 +24,7 @@ struct Test1: View {
                                     value: geometry.frame(in: .named("scrollView")).origin.y
                                 )
                         }
-                        .frame(width: 0, height: 0)
+//                        .frame(width: 0, height: 0)
                     )
                 }
                 .coordinateSpace(name: "scrollView")

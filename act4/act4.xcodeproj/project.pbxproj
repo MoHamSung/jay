@@ -63,9 +63,9 @@
 				6973C65B2A4976810020DADE /* CustomImageView.swift */,
 				6973C65D2A497BCF0020DADE /* Extensions.swift */,
 				6973C65F2A4985220020DADE /* MoreInformationView.swift */,
-				6973C6592A490DAE0020DADE /* test1.swift */,
 				6973C6612A498A750020DADE /* ShareView.swift */,
 				6973C6632A4990380020DADE /* NavigationButton.swift */,
+				6973C6592A490DAE0020DADE /* test1.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
