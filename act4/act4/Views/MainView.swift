@@ -110,6 +110,7 @@ struct MainView: View {
                         withAnimation(.interactiveSpring(response: 0.6, dampingFraction: 0.5)){
                             isNavigationBtnActive = true
                         }
+                        print("UIScreen.main.focusedView?.safeAreaInsets.top: \(UIApplication.shared.windows.first(where: {$0.isKeyWindow})?.safeAreaInsets)")
                     }
                     .ignoresSafeArea()
             }
