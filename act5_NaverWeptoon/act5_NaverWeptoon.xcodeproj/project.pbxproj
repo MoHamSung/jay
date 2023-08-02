@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		695B11732A5A710A00610BEE /* HeaderArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11722A5A710A00610BEE /* HeaderArea.swift */; };
+		695B11772A5B009C00610BEE /* HeaderArea2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11762A5B009C00610BEE /* HeaderArea2.swift */; };
 		69DB63892A52C7FC00DB3E78 /* act5_NaverWeptoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB63882A52C7FC00DB3E78 /* act5_NaverWeptoonApp.swift */; };
 		69DB638B2A52C7FC00DB3E78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB638A2A52C7FC00DB3E78 /* ContentView.swift */; };
 		69DB638D2A52C7FD00DB3E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DB638C2A52C7FD00DB3E78 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		695B11722A5A710A00610BEE /* HeaderArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderArea.swift; sourceTree = "<group>"; };
+		695B11762A5B009C00610BEE /* HeaderArea2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderArea2.swift; sourceTree = "<group>"; };
 		69DB63852A52C7FC00DB3E78 /* act5_NaverWeptoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = act5_NaverWeptoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DB63882A52C7FC00DB3E78 /* act5_NaverWeptoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = act5_NaverWeptoonApp.swift; sourceTree = "<group>"; };
 		69DB638A2A52C7FC00DB3E78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 				69DB638A2A52C7FC00DB3E78 /* ContentView.swift */,
 				69DB638C2A52C7FD00DB3E78 /* Assets.xcassets */,
 				69DB638E2A52C7FD00DB3E78 /* Preview Content */,
+				695B11722A5A710A00610BEE /* HeaderArea.swift */,
+				695B11762A5B009C00610BEE /* HeaderArea2.swift */,
 			);
 			path = act5_NaverWeptoon;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695B11772A5B009C00610BEE /* HeaderArea2.swift in Sources */,
 				69DB638B2A52C7FC00DB3E78 /* ContentView.swift in Sources */,
+				695B11732A5A710A00610BEE /* HeaderArea.swift in Sources */,
 				69DB63892A52C7FC00DB3E78 /* act5_NaverWeptoonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
