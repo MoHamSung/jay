@@ -10,12 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            HeaderArea()
+//            HeaderArea()
             
             HeaderArea2()
             
-            Text("asdfasdfasgxzcv")
-            
+            HeaderArea3()
         }
     }
     

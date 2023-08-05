@@ -26,7 +26,7 @@ struct HeaderArea2: View {
             let lineBannerwidth = geo.size.width - (sidePadding * 2)
             
             ZStack (alignment: .bottomLeading){
-//                Image("ImgBanner0\(itemIndex)")
+//                Image("ImgBanner0\(itemInd	ex)")
 //                    .resizable()
 //                    .aspectRatio(contentMode: .fit)
 //                    .opacity(CGFloat(16) / offset)
