@@ -12,9 +12,11 @@ struct ContentView: View {
         VStack {
 //            HeaderArea()
             
-            HeaderArea2()
+//            HeaderArea2()
             
             HeaderArea3()
+//            MondayContent()
+            
         }
     }
     

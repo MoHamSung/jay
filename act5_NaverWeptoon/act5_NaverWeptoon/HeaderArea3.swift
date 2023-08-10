@@ -75,6 +75,7 @@ struct HeaderArea3: View {
             )
         }
         .animation(.default, value: dragOffset == 0)
+        
     }
     
     func initArray(){
