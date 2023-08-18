@@ -33,7 +33,7 @@ struct HeaderArea: View {
         }
         .padding(.top, 84)
         .frame(maxWidth: .infinity)
-        .border(.red)
+//        .border(.red)
         .ignoresSafeArea()
     }
 }

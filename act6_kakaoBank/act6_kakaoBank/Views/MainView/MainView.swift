@@ -17,6 +17,9 @@ struct MainView: View {
                 VStack(spacing: 8) {
                     BannerArea()
                         .padding(.top, 10)
+                    PassBookArea()
+                    PlusPassBookArea()
+                    BottomOptionArea()
                 }
             }
         }

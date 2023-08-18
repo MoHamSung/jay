@@ -18,7 +18,7 @@ extension Font {
         case bold
         case extraBold
         case Black
-        case custom(String)
+//        case custom(String)
         
         var value: String {
             switch self {
@@ -40,8 +40,8 @@ extension Font {
                 return "Pretendard-ExtraBold"
             case .Black:
                 return "Pretendard-Black"
-            case .custom(let name):
-                return name
+//            case .custom(let name):
+//                return name
             }
         }
     }

@@ -19,6 +19,19 @@
 		697C18172A85E28A00B1FD00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C18162A85E28A00B1FD00 /* User.swift */; };
 		697C18192A85E29400B1FD00 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C18182A85E29400B1FD00 /* Account.swift */; };
 		697C181B2A85E2AC00B1FD00 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C181A2A85E2AC00B1FD00 /* Transaction.swift */; };
+		69A6B0A02A8E2199008A317B /* BottomOptionArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B09F2A8E2199008A317B /* BottomOptionArea.swift */; };
+		69A6B0A22A8E239C008A317B /* PlusPassBookArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B0A12A8E239C008A317B /* PlusPassBookArea.swift */; };
+		69CE310F2A8DC18F0071D577 /* act6-kakaoBank-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2E12A8C480A00740270 /* act6-kakaoBank-Info.plist */; };
+		69CE31102A8DC1DF0071D577 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DD2A8C47E200740270 /* Pretendard-Black.otf */; };
+		69CE31112A8DC1E30071D577 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DC2A8C47E200740270 /* Pretendard-Bold.otf */; };
+		69CE31122A8DC1E70071D577 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2D92A8C47E200740270 /* Pretendard-ExtraBold.otf */; };
+		69CE31132A8DC1E90071D577 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DB2A8C47E200740270 /* Pretendard-ExtraLight.otf */; };
+		69CE31142A8DC1EC0071D577 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2D82A8C47E200740270 /* Pretendard-Light.otf */; };
+		69CE31152A8DC1EE0071D577 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DA2A8C47E200740270 /* Pretendard-Medium.otf */; };
+		69CE31162A8DC1F20071D577 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DF2A8C47E300740270 /* Pretendard-SemiBold.otf */; };
+		69CE31172A8DC1F20071D577 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2E02A8C47E300740270 /* Pretendard-Thin.otf */; };
+		69CE31182A8DC1F20071D577 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DE2A8C47E200740270 /* Pretendard-Regular.otf */; };
+		69CE311A2A8DC2D00071D577 /* PassBookArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CE31192A8DC2D00071D577 /* PassBookArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +58,9 @@
 		697C18162A85E28A00B1FD00 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		697C18182A85E29400B1FD00 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		697C181A2A85E2AC00B1FD00 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		69A6B09F2A8E2199008A317B /* BottomOptionArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOptionArea.swift; sourceTree = "<group>"; };
+		69A6B0A12A8E239C008A317B /* PlusPassBookArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusPassBookArea.swift; sourceTree = "<group>"; };
+		69CE31192A8DC2D00071D577 /* PassBookArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassBookArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,11 +141,9 @@
 		697C180D2A85E20000B1FD00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69CE311B2A8DC2D50071D577 /* MainView */,
 				697C180E2A85E21800B1FD00 /* Components */,
-				697C180F2A85E23000B1FD00 /* BannerArea.swift */,
-				697C18132A85E24400B1FD00 /* HeaderArea.swift */,
 				697C18012A84775000B1FD00 /* ContentView.swift */,
-				697C18112A85E23800B1FD00 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +163,19 @@
 				697C181A2A85E2AC00B1FD00 /* Transaction.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		69CE311B2A8DC2D50071D577 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				697C18112A85E23800B1FD00 /* MainView.swift */,
+				697C18132A85E24400B1FD00 /* HeaderArea.swift */,
+				697C180F2A85E23000B1FD00 /* BannerArea.swift */,
+				69CE31192A8DC2D00071D577 /* PassBookArea.swift */,
+				69A6B0A12A8E239C008A317B /* PlusPassBookArea.swift */,
+				69A6B09F2A8E2199008A317B /* BottomOptionArea.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +236,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69CE31132A8DC1E90071D577 /* Pretendard-ExtraLight.otf in Resources */,
+				69CE31182A8DC1F20071D577 /* Pretendard-Regular.otf in Resources */,
+				69CE31142A8DC1EC0071D577 /* Pretendard-Light.otf in Resources */,
 				697C18072A84775100B1FD00 /* Preview Assets.xcassets in Resources */,
+				69CE31112A8DC1E30071D577 /* Pretendard-Bold.otf in Resources */,
+				69CE31122A8DC1E70071D577 /* Pretendard-ExtraBold.otf in Resources */,
 				697C18042A84775100B1FD00 /* Assets.xcassets in Resources */,
+				69CE31102A8DC1DF0071D577 /* Pretendard-Black.otf in Resources */,
+				69CE31162A8DC1F20071D577 /* Pretendard-SemiBold.otf in Resources */,
+				69CE310F2A8DC18F0071D577 /* act6-kakaoBank-Info.plist in Resources */,
+				69CE31172A8DC1F20071D577 /* Pretendard-Thin.otf in Resources */,
+				69CE31152A8DC1EE0071D577 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +261,13 @@
 				6907E2E32A8C489A00740270 /* FontManager.swift in Sources */,
 				697C18142A85E24400B1FD00 /* HeaderArea.swift in Sources */,
 				697C18102A85E23000B1FD00 /* BannerArea.swift in Sources */,
+				69CE311A2A8DC2D00071D577 /* PassBookArea.swift in Sources */,
 				697C181B2A85E2AC00B1FD00 /* Transaction.swift in Sources */,
+				69A6B0A22A8E239C008A317B /* PlusPassBookArea.swift in Sources */,
 				697C18172A85E28A00B1FD00 /* User.swift in Sources */,
 				697C18122A85E23800B1FD00 /* MainView.swift in Sources */,
 				697C18022A84775000B1FD00 /* ContentView.swift in Sources */,
+				69A6B0A02A8E2199008A317B /* BottomOptionArea.swift in Sources */,
 				6907E2D62A8A8B0A00740270 /* ColorManager.swift in Sources */,
 				697C18002A84775000B1FD00 /* act6_kakaoBankApp.swift in Sources */,
 				697C18192A85E29400B1FD00 /* Account.swift in Sources */,

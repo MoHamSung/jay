@@ -12,10 +12,12 @@ class Account {
     var userId: String
     let account: String
     var accountName: String
+    var amount: Int
     
-    init(userId: String, account: String, accountName: String) {
+    init(userId: String, account: String, accountName: String, amount: Int) {
         self.userId = userId
         self.account = account
         self.accountName = accountName
+        self.amount = amount
     }
 }
