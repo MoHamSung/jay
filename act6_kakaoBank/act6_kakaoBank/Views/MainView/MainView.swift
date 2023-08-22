@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
-    
     var body: some View {
         VStack(spacing: 0) {
-            HeaderArea()
+            MainHeaderArea()
             
             ScrollView {
                 VStack(spacing: 8) {
@@ -25,6 +24,22 @@ struct MainView: View {
         }
         .ignoresSafeArea()
         .padding(.horizontal, 20)
+//        .navigationDestination(for: StackViewType.self) { value in
+//            switch value {
+//            case .mainView:
+//                MainView()
+//            case .detailView:
+//                DetailView()
+//            case .loanView:
+//                LoanView()
+//            case .transferView:
+//                TransferView()
+//            }
+//        }
+        .navigationDestination(for: StackViewType.self) { value in
+            value.view
+        }
+        
     }
 }
 

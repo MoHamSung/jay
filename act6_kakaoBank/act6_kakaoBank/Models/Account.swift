@@ -7,16 +7,18 @@
 
 import Foundation
 
-class Account {
+class Account: Identifiable {
     let id = UUID().uuidString
     var userId: String
-    let account: String
+    let bank: String
+    let accountNumber: String
     var accountName: String
     var amount: Int
     
-    init(userId: String, account: String, accountName: String, amount: Int) {
+    init(userId: String, bank: String, accountNumber: String, accountName: String, amount: Int) {
         self.userId = userId
-        self.account = account
+        self.bank = bank
+        self.accountNumber = accountNumber
         self.accountName = accountName
         self.amount = amount
     }

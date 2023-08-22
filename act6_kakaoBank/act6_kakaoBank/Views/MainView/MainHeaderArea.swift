@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct HeaderArea: View {
-    let user = User(name: "김말티", bank: "국민", imgString: "ImgProfile10")
+struct MainHeaderArea: View {
+    let user = TestUser.instance.user // User(name: "김말티", imgString: "ImgProfile10")
     
     var body: some View {
         HStack(spacing: 0) {
@@ -33,13 +33,12 @@ struct HeaderArea: View {
         }
         .padding(.top, 84)
         .frame(maxWidth: .infinity)
-//        .border(.red)
         .ignoresSafeArea()
     }
 }
 
-struct HeaderArea_Previews: PreviewProvider {
+struct MainHeaderArea_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderArea()
+        MainHeaderArea()
     }
 }

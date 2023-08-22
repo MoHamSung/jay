@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var presentedViews = ["MainView", "DetailView", "LoanView", "LoanCompleteView", "ListView", "TransferView", "TransferCompleteView"]
+    @StateObject var navigationManager = NavigationManager.instance
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $navigationManager.path) {
             TabView {
                 MainView()
+                    .environmentObject(navigationManager)
                     .tabItem{
                         Image("ImgIcon01")
                     }
@@ -31,9 +32,7 @@ struct ContentView: View {
                     }
             }
         }
-        .navigationDestination(for: [String].self) { view in
-            MainView()
-        }
+        
     }
 }
 

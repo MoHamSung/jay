@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct PassBookArea: View {
-    let account = Account(userId: "12345", account: "12345-12345", accountName: "김말티의 통장", amount: 0)
+    @State var accounts = [
+        TestUser.instance.userAccount
+        //Account(userId: "12345", bank: "카카오", accountNumber: "12345-12345", accountName: "김말티의 통장", amount: 100),
+        //        Account(userId: "12345", account: "12345-12345", accountName: "김말티의 텅장", amount: 0),
+    ]
     
     var body: some View {
+        VStack (spacing: 8) {
+            ForEach(accounts) {account in
+                PassBook(account: account)
+            }
+        }
+    }
+}
+
+struct PassBook: View {
+    @StateObject var navigationManager = NavigationManager.instance
+    let account: Account
+    var body: some View {
         VStack (spacing: 20){
-            Button {
-                
-            } label: {
+            NavigationLink(value: StackViewType.detailView){
                 HStack{
                     Image("ImgLogoKakao")
                         .resizable()
@@ -75,6 +89,8 @@ struct PassBookArea: View {
         .padding(EdgeInsets(top: 29, leading: 20, bottom: 23, trailing: 22))
         .background(Color.kakaoYellow)
         .cornerRadius(18)
+
+
     }
 }
 

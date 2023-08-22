@@ -15,12 +15,23 @@
 		697C18072A84775100B1FD00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697C18062A84775100B1FD00 /* Preview Assets.xcassets */; };
 		697C18102A85E23000B1FD00 /* BannerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C180F2A85E23000B1FD00 /* BannerArea.swift */; };
 		697C18122A85E23800B1FD00 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C18112A85E23800B1FD00 /* MainView.swift */; };
-		697C18142A85E24400B1FD00 /* HeaderArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C18132A85E24400B1FD00 /* HeaderArea.swift */; };
+		697C18142A85E24400B1FD00 /* MainHeaderArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C18132A85E24400B1FD00 /* MainHeaderArea.swift */; };
 		697C18172A85E28A00B1FD00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C18162A85E28A00B1FD00 /* User.swift */; };
 		697C18192A85E29400B1FD00 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C18182A85E29400B1FD00 /* Account.swift */; };
 		697C181B2A85E2AC00B1FD00 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C181A2A85E2AC00B1FD00 /* Transaction.swift */; };
 		69A6B0A02A8E2199008A317B /* BottomOptionArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B09F2A8E2199008A317B /* BottomOptionArea.swift */; };
 		69A6B0A22A8E239C008A317B /* PlusPassBookArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B0A12A8E239C008A317B /* PlusPassBookArea.swift */; };
+		69A6B0A52A8F16D3008A317B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B0A42A8F16D3008A317B /* DetailView.swift */; };
+		69A6B0A72A9251CA008A317B /* HeaderArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B0A62A9251CA008A317B /* HeaderArea.swift */; };
+		69A6B0A92A925EAC008A317B /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B0A82A925EAC008A317B /* NavigationManager.swift */; };
+		69A6B0AB2A92670D008A317B /* MyPassbookArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6B0AA2A92670D008A317B /* MyPassbookArea.swift */; };
+		69CCDFD82A926CC7007547ED /* TransactionDetailArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCDFD72A926CC7007547ED /* TransactionDetailArea.swift */; };
+		69CCDFDB2A92797A007547ED /* LoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCDFDA2A92797A007547ED /* LoanView.swift */; };
+		69CCDFDE2A928B55007547ED /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCDFDD2A928B55007547ED /* TransferView.swift */; };
+		69CCDFE02A929278007547ED /* NumberPadArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCDFDF2A929278007547ED /* NumberPadArea.swift */; };
+		69CCDFE22A92A7D2007547ED /* AddValueBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCDFE12A92A7D2007547ED /* AddValueBtn.swift */; };
+		69CCDFE42A92AC8F007547ED /* LoanSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCDFE32A92AC8F007547ED /* LoanSheetView.swift */; };
+		69CCDFE62A92E63A007547ED /* LoanCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCDFE52A92E63A007547ED /* LoanCompleteView.swift */; };
 		69CE310F2A8DC18F0071D577 /* act6-kakaoBank-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2E12A8C480A00740270 /* act6-kakaoBank-Info.plist */; };
 		69CE31102A8DC1DF0071D577 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DD2A8C47E200740270 /* Pretendard-Black.otf */; };
 		69CE31112A8DC1E30071D577 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6907E2DC2A8C47E200740270 /* Pretendard-Bold.otf */; };
@@ -54,12 +65,23 @@
 		697C18062A84775100B1FD00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		697C180F2A85E23000B1FD00 /* BannerArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerArea.swift; sourceTree = "<group>"; };
 		697C18112A85E23800B1FD00 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		697C18132A85E24400B1FD00 /* HeaderArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderArea.swift; sourceTree = "<group>"; };
+		697C18132A85E24400B1FD00 /* MainHeaderArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderArea.swift; sourceTree = "<group>"; };
 		697C18162A85E28A00B1FD00 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		697C18182A85E29400B1FD00 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		697C181A2A85E2AC00B1FD00 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		69A6B09F2A8E2199008A317B /* BottomOptionArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOptionArea.swift; sourceTree = "<group>"; };
 		69A6B0A12A8E239C008A317B /* PlusPassBookArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusPassBookArea.swift; sourceTree = "<group>"; };
+		69A6B0A42A8F16D3008A317B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		69A6B0A62A9251CA008A317B /* HeaderArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderArea.swift; sourceTree = "<group>"; };
+		69A6B0A82A925EAC008A317B /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationManager.swift; path = ../../../../../../Desktop/NavigationManager.swift; sourceTree = "<group>"; };
+		69A6B0AA2A92670D008A317B /* MyPassbookArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPassbookArea.swift; sourceTree = "<group>"; };
+		69CCDFD72A926CC7007547ED /* TransactionDetailArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailArea.swift; sourceTree = "<group>"; };
+		69CCDFDA2A92797A007547ED /* LoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanView.swift; sourceTree = "<group>"; };
+		69CCDFDD2A928B55007547ED /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
+		69CCDFDF2A929278007547ED /* NumberPadArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadArea.swift; sourceTree = "<group>"; };
+		69CCDFE12A92A7D2007547ED /* AddValueBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddValueBtn.swift; sourceTree = "<group>"; };
+		69CCDFE32A92AC8F007547ED /* LoanSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSheetView.swift; sourceTree = "<group>"; };
+		69CCDFE52A92E63A007547ED /* LoanCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCompleteView.swift; sourceTree = "<group>"; };
 		69CE31192A8DC2D00071D577 /* PassBookArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassBookArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,18 +163,13 @@
 		697C180D2A85E20000B1FD00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				69CE311B2A8DC2D50071D577 /* MainView */,
-				697C180E2A85E21800B1FD00 /* Components */,
 				697C18012A84775000B1FD00 /* ContentView.swift */,
+				69CE311B2A8DC2D50071D577 /* MainView */,
+				69A6B0A32A8F16AE008A317B /* DetailView */,
+				69CCDFD92A92793C007547ED /* LoanView */,
+				69CCDFDC2A928B3C007547ED /* TransferView */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		697C180E2A85E21800B1FD00 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		697C18152A85E25F00B1FD00 /* Models */ = {
@@ -161,17 +178,49 @@
 				697C18162A85E28A00B1FD00 /* User.swift */,
 				697C18182A85E29400B1FD00 /* Account.swift */,
 				697C181A2A85E2AC00B1FD00 /* Transaction.swift */,
+				69A6B0A82A925EAC008A317B /* NavigationManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		69A6B0A32A8F16AE008A317B /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				69A6B0A42A8F16D3008A317B /* DetailView.swift */,
+				69A6B0A62A9251CA008A317B /* HeaderArea.swift */,
+				69A6B0AA2A92670D008A317B /* MyPassbookArea.swift */,
+				69CCDFD72A926CC7007547ED /* TransactionDetailArea.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		69CCDFD92A92793C007547ED /* LoanView */ = {
+			isa = PBXGroup;
+			children = (
+				69CCDFDA2A92797A007547ED /* LoanView.swift */,
+				69CCDFE12A92A7D2007547ED /* AddValueBtn.swift */,
+				69CCDFDF2A929278007547ED /* NumberPadArea.swift */,
+				69CCDFE32A92AC8F007547ED /* LoanSheetView.swift */,
+				69CCDFE52A92E63A007547ED /* LoanCompleteView.swift */,
+			);
+			path = LoanView;
+			sourceTree = "<group>";
+		};
+		69CCDFDC2A928B3C007547ED /* TransferView */ = {
+			isa = PBXGroup;
+			children = (
+				69CCDFDD2A928B55007547ED /* TransferView.swift */,
+			);
+			path = TransferView;
 			sourceTree = "<group>";
 		};
 		69CE311B2A8DC2D50071D577 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
 				697C18112A85E23800B1FD00 /* MainView.swift */,
-				697C18132A85E24400B1FD00 /* HeaderArea.swift */,
-				697C180F2A85E23000B1FD00 /* BannerArea.swift */,
+				697C18132A85E24400B1FD00 /* MainHeaderArea.swift */,
 				69CE31192A8DC2D00071D577 /* PassBookArea.swift */,
+				697C180F2A85E23000B1FD00 /* BannerArea.swift */,
 				69A6B0A12A8E239C008A317B /* PlusPassBookArea.swift */,
 				69A6B09F2A8E2199008A317B /* BottomOptionArea.swift */,
 			);
@@ -258,19 +307,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69CCDFE22A92A7D2007547ED /* AddValueBtn.swift in Sources */,
 				6907E2E32A8C489A00740270 /* FontManager.swift in Sources */,
-				697C18142A85E24400B1FD00 /* HeaderArea.swift in Sources */,
+				69CCDFDE2A928B55007547ED /* TransferView.swift in Sources */,
+				69CCDFE42A92AC8F007547ED /* LoanSheetView.swift in Sources */,
+				697C18142A85E24400B1FD00 /* MainHeaderArea.swift in Sources */,
+				69CCDFDB2A92797A007547ED /* LoanView.swift in Sources */,
 				697C18102A85E23000B1FD00 /* BannerArea.swift in Sources */,
+				69A6B0A52A8F16D3008A317B /* DetailView.swift in Sources */,
+				69A6B0A92A925EAC008A317B /* NavigationManager.swift in Sources */,
 				69CE311A2A8DC2D00071D577 /* PassBookArea.swift in Sources */,
+				69CCDFD82A926CC7007547ED /* TransactionDetailArea.swift in Sources */,
 				697C181B2A85E2AC00B1FD00 /* Transaction.swift in Sources */,
 				69A6B0A22A8E239C008A317B /* PlusPassBookArea.swift in Sources */,
 				697C18172A85E28A00B1FD00 /* User.swift in Sources */,
+				69A6B0AB2A92670D008A317B /* MyPassbookArea.swift in Sources */,
 				697C18122A85E23800B1FD00 /* MainView.swift in Sources */,
 				697C18022A84775000B1FD00 /* ContentView.swift in Sources */,
+				69A6B0A72A9251CA008A317B /* HeaderArea.swift in Sources */,
 				69A6B0A02A8E2199008A317B /* BottomOptionArea.swift in Sources */,
+				69CCDFE02A929278007547ED /* NumberPadArea.swift in Sources */,
 				6907E2D62A8A8B0A00740270 /* ColorManager.swift in Sources */,
 				697C18002A84775000B1FD00 /* act6_kakaoBankApp.swift in Sources */,
 				697C18192A85E29400B1FD00 /* Account.swift in Sources */,
+				69CCDFE62A92E63A007547ED /* LoanCompleteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
