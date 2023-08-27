@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NumberPadArea: View {
-    @Binding var loanAmount: Int
+    @Binding var amount: Int
     var body: some View {
         VStack(spacing: 0){
             HStack(spacing: 0) {
@@ -57,21 +57,21 @@ struct NumberPadArea: View {
         var calculatedNum = 0
         switch number {
         case -2:
-            calculatedNum = loanAmount * 100
+            calculatedNum = amount * 100
         case -1:
-            calculatedNum = loanAmount / 10
+            calculatedNum = amount / 10
         default:
-            if loanAmount == 0 {
+            if amount == 0 {
                 calculatedNum = number
             }
             else {
-                calculatedNum = loanAmount * 10 + number
+                calculatedNum = amount * 10 + number
             }
         }
         if calculatedNum >= 1000000000{
             print("숫자 초과")
         } else{
-            loanAmount = calculatedNum
+            amount = calculatedNum
         }
     }
 }
@@ -91,6 +91,6 @@ struct CustomNumberPadTextModifire: ViewModifier {
 
 struct NumberPadArea_Previews: PreviewProvider {
     static var previews: some View {
-        NumberPadArea(loanAmount: .constant(0))
+        NumberPadArea(amount: .constant(0))
     }
 }

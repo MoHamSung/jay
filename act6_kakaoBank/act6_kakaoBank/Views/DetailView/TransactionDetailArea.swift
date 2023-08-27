@@ -17,9 +17,10 @@ struct TransactionDetailArea: View {
     
     var body: some View {
         VStack {
-            ForEach(transactions) {transaction in
+            ForEach(transactions.reversed()) {transaction in
                 TransactionListItem(transaction: transaction)
             }
+            
             
         }
     }
@@ -46,10 +47,16 @@ struct TransactionListItem: View {
             Spacer()
             
             VStack(alignment: .trailing , spacing: 4) {
-                Text("\(transaction.amount)원")
-                    .font(.pretendard(size: 16, .bold))
-                    .foregroundColor(Color.kakaoBlue200)
-                
+                if transaction.type == "loan"{
+                    Text("\(transaction.amount)원")
+                        .font(.pretendard(size: 16, .bold))
+                        .foregroundColor(Color.kakaoBlue200)
+                }
+                else {
+                    Text("-\(transaction.amount)원")
+                        .font(.pretendard(size: 16, .bold))
+                        .foregroundColor(Color.KakaoBlack200)
+                }
                 Text("\(transaction.balance)원")
                     .font(.pretendard(size: 14, .regular))
                     .foregroundColor(Color.kakaoGray200)

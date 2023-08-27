@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddValueBtn: View {
-    @Binding var loanAmount: Int
+    @Binding var amount: Int
     
     var body: some View {
         HStack{
@@ -32,12 +32,12 @@ struct AddValueBtn: View {
         }
     }
     func btnPressed(number: Int){
-        loanAmount += (number * 10000)
+        amount += (number * 10000)
     }
 }
 
 struct AddValueBtn_Previews: PreviewProvider {
     static var previews: some View {
-        AddValueBtn(loanAmount: .constant(0))
+        AddValueBtn(amount: .constant(0))
     }
 }

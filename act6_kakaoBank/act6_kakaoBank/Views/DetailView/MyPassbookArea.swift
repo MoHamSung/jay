@@ -25,7 +25,7 @@ struct MyPassbookArea: View {
             
             HStack(spacing: 7) {
                 Button {
-                    navigationManager.path.append(StackViewType.transferView)
+                    navigationManager.path.append(StackViewType.listView)
                 } label: {
                     Text("이체하기")
                         .font(.pretendard(size: 14, .regular))

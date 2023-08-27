@@ -19,11 +19,11 @@ struct LoanView: View {
         if !isLoanCompleted {
             VStack(spacing: 12) {
                 VStack {
+                    Spacer()
                     if loanAmount == 0 {
                         Text("대출금액")
                             .font(.pretendard(size: 36, .regular))
                             .foregroundColor(Color.kakaoGray100)
-                            .frame(height: 57)
                     }
                     else {
                         HStack(spacing: 2){
@@ -32,13 +32,12 @@ struct LoanView: View {
                             Text("원")
                                 .font(.pretendard(size: 38, .semiBold))
                         }
-                        .frame(height: 57)
                         .foregroundColor(Color.KakaoBlack200)
                         .lineLimit(1)
                         .minimumScaleFactor(0.5)
                     }
+                    Spacer()
                 }
-                .padding(.vertical, 118)
                 
                 Text("잔액: \(account.amount)원")
                     .font(.pretendard(size: 14, .regular))
@@ -48,9 +47,13 @@ struct LoanView: View {
                     .padding(.leading, 20)
                     .background(Color.kakaoWhite200)
                     .cornerRadius(8)
+                    .padding(.horizontal, 14)
                 
-                AddValueBtn(loanAmount: $loanAmount)
-                NumberPadArea(loanAmount: $loanAmount)
+                AddValueBtn(amount: $loanAmount)
+                    .padding(.horizontal, 14)
+                NumberPadArea(amount: $loanAmount)
+                    .padding(.horizontal, 14)
+
                 
                 Button {
                     isLoanSheetShow.toggle()
@@ -65,7 +68,7 @@ struct LoanView: View {
                 }.disabled(loanAmount == 0 ? true : false)
                 
             }
-            .padding(.horizontal, 30)
+            .padding(.horizontal, 16)
             .sheet(isPresented: $isLoanSheetShow) {
                 LoanSheetView(isLoanSheetShow: $isLoanSheetShow, isLoanCompleted: $isLoanCompleted, userAccount: account, elonMusk: elonMusk, elonMuskAccount: elonMuskAccount, loanAmount: loanAmount)
                     .presentationDetents([.fraction(0.4)])
@@ -73,6 +76,7 @@ struct LoanView: View {
         }
         else if isLoanCompleted {
             LoanCompleteView(loanAmount: loanAmount)
+                .navigationBarBackButtonHidden()
         }
     }
 }
