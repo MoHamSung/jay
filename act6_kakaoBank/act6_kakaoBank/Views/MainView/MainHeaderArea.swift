@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainHeaderArea: View {
-    let user = TestUser.instance.user // User(name: "김말티", imgString: "ImgProfile10")
+    @State var user = TestUser.instance.user // User(name: "김말티", imgString: "ImgProfile10")
     
     var body: some View {
         HStack(spacing: 0) {
@@ -34,6 +34,11 @@ struct MainHeaderArea: View {
         .padding(.top, 84)
         .frame(maxWidth: .infinity)
         .ignoresSafeArea()
+        .onAppear(){
+            Task {
+               user = try await FirebaseManager.instance.readUser() ?? User(name: "", imgString: "")
+            }
+        }
     }
 }
 

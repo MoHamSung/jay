@@ -18,7 +18,8 @@ struct ContentView: View {
                     .tabItem{
                         Image("ImgIcon01")
                     }
-                Text("김말티 바보")
+                LoadingView()
+                    .frame(width: 50, height: 50)
                     .tabItem{
                         Image("ImgIcon02")
                     }

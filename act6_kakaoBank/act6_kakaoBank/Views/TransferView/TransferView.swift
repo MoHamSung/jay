@@ -58,9 +58,9 @@ struct TransferView: View {
                         .foregroundColor(Color.KakaoBlack300)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 20)
-                        .background(account.amount < transferAmount ? Color.kakaoWhite100 : Color.kakaoYellow)
+                        .background((account.amount < transferAmount || transferAmount <= 0) ? Color.kakaoWhite100 : Color.kakaoYellow)
                         .cornerRadius(10)
-                }.disabled(account.amount < transferAmount ? true : false)
+                }.disabled((account.amount < transferAmount || transferAmount <= 0) ? true : false)
             }
             .padding(.horizontal, 30)
             .sheet(isPresented: $isTransferSheetShow) {

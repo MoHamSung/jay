@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Account: Identifiable {
+class Account: Identifiable, Codable {
     let id = UUID().uuidString
     var userId: String
     let bank: String

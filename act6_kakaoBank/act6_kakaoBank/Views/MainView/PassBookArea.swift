@@ -20,12 +20,18 @@ struct PassBookArea: View {
                 PassBook(account: account)
             }
         }
+        .onAppear {
+            Task {
+                TestUser.instance.userAccount = try await FirebaseManager.instance.readAccount()!
+            }
+        }
+
     }
 }
 
 struct PassBook: View {
     @StateObject var navigationManager = NavigationManager.instance
-    let account: Account
+    @State var account: Account
     var body: some View {
         VStack (spacing: 20){
             NavigationLink(value: StackViewType.detailView){
@@ -89,7 +95,6 @@ struct PassBook: View {
         .padding(EdgeInsets(top: 29, leading: 20, bottom: 23, trailing: 22))
         .background(Color.kakaoYellow)
         .cornerRadius(18)
-
 
     }
 }
